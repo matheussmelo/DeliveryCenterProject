@@ -185,6 +185,3 @@ class Deliveries(Base):
     driver_id = Column(Integer, ForeignKey("public.drivers.driver_id"))
     delivery_distance_meters = Column(Float)
     delivery_status = Column(String)
-
-# Create all tables in the database
-Base.metadata.create_all(engine)
